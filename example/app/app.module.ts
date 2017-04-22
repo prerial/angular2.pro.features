@@ -6,13 +6,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent }  from './app.component';
+
 import { BindingModule }  from './model/binding.module';
-import { ProductComponent } from './component/product.component';
+import { BindingComponent } from './component/binding.component';
+// import { ProductComponent } from './component/product.component';
+
+import { BuiltInModule }  from './model/built-in.module';
+import { BuiltinComponent } from './component/built-in.component';
+
+import { EventsFormsModule }  from './model/events-forms.module';
+import { EventsFormsComponent } from './component/events-forms.component';
+
 
 @NgModule({
-    imports: [BrowserModule, BindingModule, RouterModule.forRoot([
-        { path: 'chapter12', component: ProductComponent },
-        { path: 'chapter13', component: ProductComponent },
+    imports: [BrowserModule, BindingModule, BuiltInModule, EventsFormsModule, RouterModule.forRoot([
+        { path: 'chapter12', component: BindingComponent },
+        { path: 'chapter13', component: BuiltinComponent },
+        { path: 'chapter14', component: EventsFormsComponent },
         { path: '**', redirectTo: '/chapter12' }
     ])],
     declarations: [AppComponent],
