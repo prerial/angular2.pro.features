@@ -7,13 +7,11 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 // import { Product } from './product.model';
-import { ProductComponent } from '../component/product.component';
-import { BindingComponent } from '../component/binding.component';
-// import { Model } from '../model/repository.model';
+import { EventsFormsComponent } from '../component/events-forms.component';
 
 @NgModule({
     imports: [BrowserModule, FormsModule, RouterModule],
-    declarations: [ ProductComponent, BindingComponent],
+    declarations: [ EventsFormsComponent ],
     exports: []
 })
-export class BindingModule { }
+export class EventsFormsModule { }

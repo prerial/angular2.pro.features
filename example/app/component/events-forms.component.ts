@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
 import { Model } from '../model/repository.model';
 
 @Component({
-    selector: 'product',
-    templateUrl: 'app/templates/product.template.html'
+    selector: 'eventsforms',
+    templateUrl: 'app/templates/events-forms.template.html'
 })
 
-export class ProductComponent {
+export class EventsFormsComponent {
 
     model: Model = new Model();
 

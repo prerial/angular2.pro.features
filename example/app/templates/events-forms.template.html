@@ -1,0 +1,7 @@
+<h5>Chapter 14 - Events & Forms</h5>
+<div class="bg-info p-a-1">
+    There are {{model.getProducts().length}} products in the model
+</div>
+<div [ngClass]="'p-a-1 ' + getClasses()" [textContent]="'Name: ' + (model.getProduct(1)?.name || 'None')">
+    Hello, World.
+</div>
