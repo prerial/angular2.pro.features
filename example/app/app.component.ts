@@ -13,7 +13,8 @@ import { Component } from '@angular/core';
   </button>
     <a class="navbar-brand" routerLink="/chapter12" routerLinkActive="active" href="#">Binding</a>
     <a class="navbar-brand" routerLink="/chapter13" routerLinkActive="active" href="#">Built-In</a>
-    <a class="navbar-brand" routerLink="/chapter14" routerLinkActive="active" href="#">Events & Forms</a>
+    <a class="navbar-brand" routerLink="/chapter14-1" routerLinkActive="active" href="#">Events</a>
+    <a class="navbar-brand" routerLink="/chapter14-2" routerLinkActive="active" href="#">Forms</a>
   </nav>
         <router-outlet></router-outlet>`,
     styles: ['.navbar-brand { font-size:1em;color: silver; }', '.navbar-brand.active { color: white; }']

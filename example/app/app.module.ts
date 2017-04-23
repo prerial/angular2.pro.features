@@ -17,12 +17,18 @@ import { BuiltinComponent } from './component/built-in.component';
 import { EventsFormsModule }  from './model/events-forms.module';
 import { EventsFormsComponent } from './component/events-forms.component';
 
+import { BookFormsModule }  from './model/forms.module';
+import { FormsComponent } from './component/forms.component';
+
 
 @NgModule({
-    imports: [BrowserModule, BindingModule, BuiltInModule, EventsFormsModule, RouterModule.forRoot([
+    imports: [BrowserModule, BindingModule, BuiltInModule,
+        EventsFormsModule, BookFormsModule,
+        RouterModule.forRoot([
         { path: 'chapter12', component: BindingComponent },
         { path: 'chapter13', component: BuiltinComponent },
-        { path: 'chapter14', component: EventsFormsComponent },
+        { path: 'chapter14-1', component: EventsFormsComponent },
+        { path: 'chapter14-2', component: FormsComponent },
         { path: '**', redirectTo: '/chapter12' }
     ])],
     declarations: [AppComponent],

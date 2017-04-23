@@ -7,11 +7,11 @@ import { Product } from '../model/product.model';
 import { Model } from '../model/repository.model';
 
 @Component({
-    selector: 'eventsforms',
-    templateUrl: 'app/templates/events-forms.template.html'
+    selector: 'forms',
+    templateUrl: 'app/templates/forms.template.html'
 })
 
-export class EventsFormsComponent {
+export class FormsComponent {
 
     model: Model = new Model();
     selectedProduct: string;
